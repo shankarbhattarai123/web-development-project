@@ -1,0 +1,242 @@
+
+ul
+{
+background-color: black;
+padding: 15px;
+margin-top: 0px;
+}
+ul li
+{
+    display: inline;
+    padding: 20px;
+}
+ul li a 
+{
+    text-decoration: none;
+    color: white;
+    
+}
+ul li:hover{
+    background-color: grey;
+}
+.dropbtn {
+
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: black;
+  }
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 700px;
+  }
+  
+  .dropdown-content {
+    display:none;
+    position: absolute;
+    top: 20px;
+    min-width: 170px;
+    color:white;
+    background-color: white;
+    z-index: 200;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover
+   {
+       background-color:grey;
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .search
+  {
+      float:right;
+  }
+
+  
+
+  /*slider css*/
+  * {box-sizing: border-box}
+  body {font-family: Verdana, sans-serif; margin:0;}
+.mySlides {display: none}
+
+
+/* Slideshow container */
+.slideshow-container {
+  width:100%;
+  position: absolute;
+  top:20px;
+  margin-top: 0px;
+  z-index:-1;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+/* band class properties*/
+.band
+{
+  position: absolute;
+  top:750px;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 20px;
+}
+
+
+
+/*container div css*/
+.container 
+{
+  background-color: black;
+  color:white;
+  width:100%;
+  height:620px;
+  position: absolute;
+  top:1300px;
+  text-align: center;
+}
+.tour
+{
+  background-color: white;
+  margin-left: 200px;
+  margin-right: 200px;
+  color:grey;
+  padding-right:10px;
+  border-radius: 10px;
+  
+}
+.tour>button
+{
+  background-color:red;
+  font-size: 15px;
+  border: none;
+  padding:5px;
+  border-radius: 5px;
+  float: left;
+}
+.flex-container {
+  display: flex;
+  margin-left: 200px;
+  margin-top: 10px;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin-right: 20px;
+  height: 300px;
+  width: 300px;
+  color: black;
+}
+.flex-container:hover img{
+  opacity: 0.7;
+}
+.flex-container:hover img{
+  opacity: 0.7;
+}
+
+
+
+/* CONTACT CLASS PROPERTIES*/
+.contact
+{
+  position:absolute;
+  top:1950px;
+  height:300px
+}
+.contactinf
+{
+  margin-left: 350px;
+}
+.formclass
+{
+  margin-left: 850px;
+  display:block;
+}
+.poster
+{
+  position: absolute;
+  top:2250px;
+}
+.poster>img
+{
+  width: 100%;
+}
+
+
+
+
+/*social media icon css*/

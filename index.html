@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>index</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='main.js'></script>
+</head>
+<body>
+        <nav>
+    <ul>
+        <li><a href="Home.html">HOME</a></li>
+        <li><a href="Band.html">BAND</a></li>
+        <li><a href="Tour.html">TOUR</a></li>
+        <li><a href="Contact.html">CONTACT</a></li>
+        <li>
+            <div class="dropdown">
+                <button class="dropbtn">MORE</button>
+                <div class="dropdown-content">
+                  <a href="Merchandise.html">Merchandise</a>
+                  <a href="extras.html">Extras</a>
+                  <a href="Media.html">Media</a>
+                </div>
+                </div>
+                <div class="search">
+                <li> <button><i class="fa fa-search"></i></button></li>
+            </div>
+        </li>
+    </ul>
+    
+</nav>
+
+
+<!--SLider-->
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="1.jpg" style="width:100%">
+      <div class="text"><h2>New York</h2><br>
+        The atmosphere in New York is lorem ipsum.</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="2.jpg" style="width:100% ">
+      <div class="text"><h2>Chicago</h2><br>
+        Thank you, Chicago - A night we won't forget.</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="3.jpg" style="width:100%">
+      <div class="text"><h2>Los Angeles</h2><br>
+        We had the best time playing at Venice Beach!</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+
+
+<!--article container-->
+<div class="band">
+  <h1>THE BAND</h1>
+  <h5>we love music</h5>
+  <p> 
+   <i> We have created a fictional band website. Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</i>
+  </p>
+  <img src="bandimage.jpg" style="height:200px; width:200px; margin-right:100px;">
+  <img src="bandimage.jpg" style="height:200px; width:200px; margin-right:100px;">
+  <img src="bandimage.jpg" style="height:200px; width:200px; margin-right:50px;"></div>
+
+
+  <!--next div element-->
+  <div class="container">
+    <h1>TOUR DATES</h1>
+    <h6>Remember to book your tickets!</h6>
+    <div class="tour">
+      <b style="float: left; margin-right: 20px;">september</b> &nbsp; &nbsp; <button>Sold Out</button><hr>
+      <b style="float: left; margin-right: 20px;">october</b> &nbsp; &nbsp; <button>Sold Out</button><hr>
+     <b style="float: left;"> november</b> &nbsp; &nbsp; <b style="float: right; background-color: black; padding: 7px; border-radius: 25px; ">3</b>
+
+    </div>
+
+    <div class="flex-container">
+      <div><img src="flex1.jpg" width="300px" height="200px" class="image1">
+      <p style="float: left;">New York<br>
+      <p style="color: grey;">Fri 27 Nov 2016<p/>
+      Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+      <button style="background-color: black; font-size: 15px; float: left; color: white; padding: 10px;">Buy Tickets</button>
+
+      </div>
+      <div>
+        <img src="flex2.jpg" width="300px" height="200px" class="image2">
+        <p style="float: left;">Paris<br>
+          <p style="color: grey;">Sat 28 Nov 2016<p/>
+            Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button style="background-color: black; font-size: 15px; float: left; color: white; padding: 10px;">Buy Tickets</button>
+          
+    
+
+      </div>
+      <div>
+        <img src="flex3.jpg" width="300px" height="200px" class="image3">
+        <p style="float: left;">San Francisco<br>
+          <p style="color: grey;">Sun 29 Nov 2016<p/>
+            Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button style="background-color: black; font-size: 15px; float: left; color: white; padding: 10px;">Buy Tickets</button>
+            
+    
+
+      </div>  
+    </div>
+  </div>
+
+    
+  <!--other div element-->
+  <div class="contact">
+    <h1 style="margin-left: 600px;">CONTACT</h1>
+    <h5 style="margin-left: 620px; color: grey;">Fan? Drop a note!</h5>
+    <div class="contactinf">
+      For contact us:<br>
+      Chicago, US<br>
+      Phone: +00 151515<br>
+      Email: mail@mail.com
+    </div>
+    <div class="formclass">
+      <form>
+        <input type="text" name="name" placeholder="Name" width="150px" height="20px">
+        <input type="text" name="email" placeholder="Email" width="100px" height="20px"><br>
+        <input type="text" name="message" placeholder="Message"><br>
+        <input type="submit" value="SEND">
+      </form>
+    </div>
+  </div>
+
+
+  <!--poster div element-->
+  <div class="poster">
+    <img src="poster.jpg">
+  </div>
+
+  <!--icons-->
+  
+</body>
+</html>
+
+
+
+
+
