@@ -1,6 +1,7 @@
 nav 
 {
   position:fixed;
+  z-index: 200;
 }
 ul
 {
@@ -237,9 +238,27 @@ ul li:hover{
 .poster>img
 {
   width: 100%;
+  z-index: -1;
 }
 
 
 
 
 /*social media icon css*/
+footer
+{
+  position:absolute;
+  top:3050px;
+  margin-left: 500px;
+  margin-bottom: 50px;
+
+}
+footer>h5
+{
+  margin-left:65px ;
+  color:grey;
+}
+footer>h5>a
+{
+  color:gray;
+}
