@@ -1,7 +1,8 @@
 nav 
 {
   position:fixed;
-  z-index: 200;
+  z-index: 1;
+  width: 100%;
 }
 ul
 {
@@ -22,6 +23,7 @@ ul li a
 }
 ul li:hover{
     background-color: grey;
+    padding:16px;
 }
 .dropbtn {
 
@@ -30,20 +32,22 @@ ul li:hover{
     cursor: pointer;
     font-size: 16px;
     background-color: black;
+
   }
 .dropdown {
     position: relative;
     display: inline-block;
-    margin-right: 700px;
+   
   }
   
   .dropdown-content {
     display:none;
     position: absolute;
     top: 20px;
+    background-color: white;
     min-width: 170px;
     color:white;
-    background-color: white;
+ 
     z-index: 200;
   }
   .dropdown-content a {
@@ -56,6 +60,7 @@ ul li:hover{
   .dropdown-content a:hover
    {
        background-color:grey;
+       
 }
   
   .dropdown:hover .dropdown-content {
@@ -63,7 +68,8 @@ ul li:hover{
   }
   .search
   {
-      float:right;
+  float: right;
+  
   }
 
   
@@ -205,14 +211,17 @@ ul li:hover{
   width: 300px;
   color: black;
 }
-.flex-container:hover img{
-  opacity: 0.7;
-}
-.flex-container:hover img{
+.img1:hover{
   opacity: 0.7;
 }
 
+.img2:hover{
+  opacity: 0.7;
+}
+.img3:hover{
+  opacity: 0.7;
 
+}
 
 /* CONTACT CLASS PROPERTIES*/
 .contact
